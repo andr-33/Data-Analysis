@@ -1,0 +1,16 @@
+Lab 1: 
+    Question 1: check the bottom 10 rows of the data frame
+    R: print(df.tail(10))
+
+    Question 2: find the name of columns of the data frame
+    R: print(df.columns)
+
+    Question 3: Apply the method ".describe()" to the columns "length" and "compression-ratio"
+    R: print(df[['length', 'compression-ratio']].describe())
+
+    Question 4: Save the dataframe in your computer
+    R: df.to_csv("~/Escritorio/cochesData.csv", index=False)
+
+Lab 2:
+    Question 1: How to know what number of doors is most common among cars
+    R: df["num-of-doors"].value_counts().idxmax()
